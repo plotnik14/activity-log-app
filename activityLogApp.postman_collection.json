@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "9f09af15-b7e0-4dc0-b4a7-42b545228033",
+		"name": "activityLogApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/activityLogApp/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activityLogApp",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/activityLogApp/activities?ids=1,2,3&startDate=1980-01-01 00:00:00&endDate=2020-01-01 00:00:00&period=YEAR",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activityLogApp",
+						"activities"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "1,2,3"
+						},
+						{
+							"key": "startDate",
+							"value": "1980-01-01 00:00:00"
+						},
+						{
+							"key": "endDate",
+							"value": "2020-01-01 00:00:00"
+						},
+						{
+							"key": "period",
+							"value": "YEAR"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
